@@ -1,0 +1,14 @@
+<img src="Content/img/pet1.png" alt="" height = "200px">
+<ul>
+ <li>@Model.GetName()</li>
+ <li> has @Model.GetEnergy()% energy</li>
+ <li>has @Model.GetAttention()% level of happiness</li>
+</ul>
+
+<h1>Actions</h1>
+<form action="/pet_feed">
+  <input type="radio" name="action" id="feed" value="feed"> Feed @Model.GetName()!<br>
+  <input type="radio" name="action" id="sleep" value="sleep">Put @Model.GetName() to sleep!<br>
+  <input type="radio" name="action" id="play" value= "play"> Play with @Model.GetName()!<br>
+  <button type="submit">Do it!</button>
+</form>
